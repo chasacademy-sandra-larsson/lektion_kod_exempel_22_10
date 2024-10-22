@@ -1,12 +1,15 @@
 // Räkna antalet gånger ett visst element finns i en array
 
-const fruits = ["apple", "banana", "orange", "apple", "banana", "apple"];
+const fruits  = ["orange", "apple", "banana", "kiwi", "orange"];
+
 let count = 0;
 
-for (let i = 0; i < fruits.length; i++) {
-  if (fruits[i] === "apple") {
-    count++;
-  }
-}
+const found = "kiwi";
 
-console.log("Antalet 'apple' är: " + count);
+for(let i = 0; i < fruits.length; i++) {
+      if(fruits[i] === found) {
+        count += 1;
+      } 
+} 
+
+console.log(`Antalet ${found} är ${count}`);

@@ -1,11 +1,20 @@
 // Beräkna genomsnittet av alla tal i en array
 
-const numbers = [10, 20, 30, 40, 50];
+
+const numbers = [1,2,3,4,5,6,7,8,9];
+
 let sum = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
-}
+// for(let i = 0; i < numbers.length; i++){
+//   sum = sum + numbers[i];
+// }
+
+
+// Istället för for-loop kan man använda arraymetoden foreach
+numbers.forEach(function (item) {
+  sum = sum + item;
+});
+
 
 const average = sum / numbers.length;
-console.log("Genomsnittet är: " + average);
+console.log("medel är", average)
